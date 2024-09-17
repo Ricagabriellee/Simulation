@@ -1,5 +1,6 @@
+/* Global Styles */
 * {
-  box sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -7,11 +8,11 @@
 
 nav {
   height: 80px;
-  backgorund: #fdcc04;
+  background: #fdcc04; /* Fixed typo: backgorund to background */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem calc((100vw - 1300px) / 2);
+  padding: 0 calc((100vw - 1300px) / 2); /* Removed extra 'rem' */
 }
 
 .logo {
@@ -32,11 +33,12 @@ nav a:hover {
   color: #fff;
 }
 
+/* Hero Section */
 .hero-container {
   display: grid;
-  grif-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Fixed typo: grif-template-columns to grid-template-columns */
   height: 95vh;
-  padding: 0rem calc((100vw - 1300px) / 2);
+  padding: 0 calc((100vw - 1300px) / 2); /* Removed extra 'rem' */
 }
 
 .column-left {
@@ -45,12 +47,13 @@ nav a:hover {
   justify-content: center;
   align-items: flex-start;
   color: #000;
-  padding: 0rem 2rem;
+  padding: 0 2rem;
 }
 
 .column-left h1 {
   margin-bottom: 1rem;
   font-size: 3rem;
+}
 
 .column-left p {
   margin-bottom: 2rem;
@@ -63,7 +66,7 @@ button {
   font-size: 1rem;
   border: none;
   color: #fdcc04;
-  backgrounf: #000
+  background: #000; /* Fixed typo: backgrounf to background */
   cursor: pointer;
   border-radius: 50px;
 }
@@ -77,7 +80,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0rem 2rem;
+  padding: 0 2rem;
 }
 
 .hero-image {
@@ -85,6 +88,7 @@ button:hover {
   height: 100%;
 }
 
+/* Media Query for Responsive Design */
 @media screen and (max-width: 768px) {
   .hero-container {
     grid-template-columns: 1fr;
